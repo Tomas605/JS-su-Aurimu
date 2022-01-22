@@ -1,29 +1,12 @@
-/*sunkusisSestadienis();
 
-function sunkusisSestadienis(){
-    console.log("Tikrai taip");
-} */
-
-//uzduotis is skaidriu 
-
-/*function min(a, b) {
-if (a < b){
-    return a;
-} else{
-    return b;
+function sayHi(name) {
+    return "Labas " + "Aurimas"
 }
 
-}
-const atsakymas = min(1, 4);
-console.log(atsakymas)*/
+const atsakymas = sayHi("Aurimas");
+alert(atsakymas);
 
-// pirma uzduotis
-function sayHi(word) {
-    alert(word);
-}
-
-sayHi("Laba diena");
-sayHi("Zadarov");
-sayHi("Zadarov");
-
-
+/*funkcija priima viena parametra name
+funkcija turi tik grazintina jusu sugalvota pasisveikinima
+sujungta su(per parametra) duotu vardu
+is funkcijos kvietimo gauta verte alertinti
