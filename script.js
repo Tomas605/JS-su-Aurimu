@@ -1,12 +1,11 @@
-
-function sayHi(name) {
-    return "Labas " + "Aurimas"
-}
-
-const atsakymas = sayHi("Aurimas");
+/*
+#4
+Deklaruoja funkcija, kuri priima ir sudeda du skaicius;
+Funkcija atsakyma grazina;
+is pakviestos funkcijos grazina atsakyma mes alertinam;
+*/
+function suma(skaiciusPirmas, skaiciusAntras) {
+    return skaiciusPirmas + skaiciusAntras
+}   
+const atsakymas = suma(4,6)
 alert(atsakymas);
-
-/*funkcija priima viena parametra name
-funkcija turi tik grazintina jusu sugalvota pasisveikinima
-sujungta su(per parametra) duotu vardu
-is funkcijos kvietimo gauta verte alertinti
