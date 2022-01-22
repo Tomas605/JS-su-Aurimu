@@ -1,25 +1,29 @@
-const biudzetas = Number(prompt("koks tavo vardas")); //stringas
-const prekesKaina = 500;// number
-if (biudzetas > prekesKaina) {
-    alert("Galim pirkti");
-} else if (biudzetas === prekesKaina) {
-  alert ("Nepareikes susiverzti dirzus, bet iperkam"); 
-} else if (biudzetas == prekesKaina) {
-    alert ("nezinau, turbut iperkama"); 
-} else {
-    alert ("neiperkama")
+/*sunkusisSestadienis();
+
+function sunkusisSestadienis(){
+    console.log("Tikrai taip");
+} */
+
+//uzduotis is skaidriu 
+
+/*function min(a, b) {
+if (a < b){
+    return a;
+} else{
+    return b;
 }
 
+}
+const atsakymas = min(1, 4);
+console.log(atsakymas)*/
+
+// pirma uzduotis
+function sayHi(word) {
+    alert(word);
+}
+
+sayHi("Laba diena");
+sayHi("Zadarov");
+sayHi("Zadarov");
 
 
-/* Pirma uzduotis
-Deklaruoti savo biudzeta
-Deklaruoti produkto kaina
-Jeigu turite daugiau pinigu nei prekes kaina
-alerkinti, kad turit pakankamai
-jeigu ne, alerkinkit priesinga zinute */
-
-/* Antra uzduotis
-Papildyti salyga
-Jeigu yra lygiai tiek biudzetas, kiek kainuoja preke
-alerkinti reikes susispausti dirzus*/
