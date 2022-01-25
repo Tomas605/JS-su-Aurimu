@@ -1,9 +1,7 @@
-const celsius = prompt("Iveskite laipsnius: ");
+const eur = prompt("Iveskite eurus: ")
 
-const atsakymas = celsiusToFarengheit(celsius)
-
-
-
-function celsiusToFarengheit(celsius){
-    return celsius * 1.8 + 32;
+function eurToRub(eur) {
+    return eur * 88.05;
 }
+const atsakymas = eurToRub(eur);
+alert(atsakymas);
