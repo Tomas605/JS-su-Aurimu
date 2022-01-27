@@ -1,7 +1,7 @@
-const eur = prompt("Iveskite eurus: ")
+const norimuCikluSkaicius = 3;
+let cikluSkaicius = 1;
+cikluSkaicius++;
 
-function eurToRub(eur) {
-    return eur * 88.05;
+while (cikluSkaicius < norimuCikluSkaicius) {
+   alert(cikluSkaicius)
 }
-const atsakymas = eurToRub(eur);
-alert(atsakymas);
