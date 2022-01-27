@@ -1,7 +1,18 @@
-const norimuCikluSkaicius = 3;
-let cikluSkaicius = 1;
-cikluSkaicius++;
 
-while (cikluSkaicius < norimuCikluSkaicius) {
-   alert(cikluSkaicius)
+const tiesa = 10;
+
+let spejimas = prompt("Atspek skaicius");
+
+while (spejimas != tiesa) {
+
+if (spejimas < tiesa) {
+    alert("Per mazas skaicius");
+      }  else{
+          alert("per aukstai")
+      }
+      spejimas = prompt("Atspek skaiciu");
 }
+
+alert("Atspejei"); 
+
+
