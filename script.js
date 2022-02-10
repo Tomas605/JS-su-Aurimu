@@ -1,4 +1,4 @@
-/*const vardas ="Tomas Uzpurvis" ;
+const vardas = "Tomas Uzpurvis";
 
 const raidziuSkaicius = vardas.length;
 
@@ -8,7 +8,7 @@ const vardasMazosiomis = vardas.toLowerCase();// mazosiomis raidemis
 const vardasDidziosiomis = vardas.toUpperCase();// didziosiomis raidemis 
 const apkeistaRaide = vardasMazosiomis.replace(/s/g, "");// regular expressions 
 
-console.log(apkeistaRaide);*/
+console.log(apkeistaRaide);
 
 const transliacija = `
  32   36   44 16  22      18     8   30   12      86   44
@@ -22,12 +22,6 @@ const transliacija = `
 2 54    6    60 84  0   5    12      2  98 22 40     74 4
 `;
 
-const transliacijaBeNewLine = transliacija.replaceAll('\n', ' ');
-const masyvasSuTarpais = transliacijaBeNewLine.split(' ');
-const skaiciuMasyvas = masyvoValytuvas(masyvasSuTarpais);
-const atkirptiSkaiciuMasyvas = skaiciuMasyvas.slice(-40);
-
-console.log(atkirptiSkaiciuMasyvas);
 
 function masyvoValytuvas(masyvasKuriReikiaIsvalyt) {
   const tikSkaiciai = [];
@@ -42,3 +36,51 @@ function masyvoValytuvas(masyvasKuriReikiaIsvalyt) {
 
   return tikSkaiciai;
 }
+// Pirma uzduotis
+const transliacijaBeNewLine = transliacija.replaceAll('\n', ' ');
+const masyvasSuTarpais = transliacijaBeNewLine.split(' ');
+const skaiciuMasyvas = masyvoValytuvas(masyvasSuTarpais);
+// Antra uzduotis
+const paskutiniaiSkaiciai = skaiciuMasyvas.slice(-40);
+
+console.log(paskutiniaiSkaiciai);
+
+// Trecia uzduotis
+const vartoniniSkaiciai = [];
+
+for (let i = 0; i < paskutiniaiSkaiciai.length; i += 2) {
+  if (paskutiniaiSkaiciai[i] !== "6") {
+    vartoniniSkaiciai.push(paskutiniaiSkaiciai[i]);
+  }
+}
+// Ketvirta uzduotis
+const sprendimas = [];
+
+for (let i = 0; i < vartoniniSkaiciai.length; i++) {
+  let skaiciuokle = 0;
+
+
+  for (let j = 0; j < vartoniniSkaiciai.length; j++) {
+    if (vartoniniSkaiciai[i] === vartoniniSkaiciai[i] {
+      skaiciuokle++;
+    }
+  }
+  if (skaiciuokle > 1) {
+    if (sprendimas.includes(vartoniniSkaiciai[i])) {
+      sprendimas.push(vartoniniSkaiciai[i]);
+    }
+  }
+}
+const penktaUzduotis = [
+  sprendimas[0],
+  sprendimas[2],
+  sprendimas[1],
+]
+penktosUzduotiesMasyvas.join("-")
+
+
+/*let arr = [1, 0, false];
+console.log( arr.indexOf(0) ); // 1
+console.log( arr.indexOf(false) ); // 2
+console.log( arr.indexOf(null) ); // -1
+console.log( arr.includes(1) ); // true*/
