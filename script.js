@@ -1,7 +1,10 @@
-const mygtukas = document.querySelector("button");
 
-mygtukas.addEventListener("click" , paspaudimas);
+const input = document.querySelector("input");
+const button = document.querySelector("button");
 
-function paspaudimas(event){
-console.log(event)
+button.addEventListener("click", irasas);
+
+function irasas(){
+console.log(input);
+
 }
